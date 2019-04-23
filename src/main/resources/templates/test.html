@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>user login</title>
+</head>
+<body>
+<h3 th:text="${name}"></h3>
+<br/>
+<div shiro:hasPermission="user:alterUsername">
+进入修改昵称：<a href="alterUsername">修改昵称</a><br/>
+</div>
+<div>
+进入修改密码：<a href="alterPassword">修改密码</a><br/>
+</div>
+</body>
+</html>
